@@ -1,0 +1,1030 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;align-items: center;
+  background: #000;
+  padding: 10px;
+  height: 100vh;
+}
+section{
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  animation: colorChange 5s linear infinite;
+}
+@keyframes colorChange{
+  0%{
+    filter:hue-rotate(200deg);
+  }
+  50%{
+    filter:hue-rotate(300deg);
+  }
+  100%{
+    filter:hue-rotate(200deg);
+  }
+}
+span{
+  position: relative;
+  display: block;
+  width: 15px;
+  height: 15px;
+  -webkit-text-fill-color:transparent;
+}
+span::before{
+  content: '';
+  position: absolute;width: 100%;height: 100%;top: 0;left: 0;
+  background: #00ff0a;
+  box-shadow: 0 0 10px #00ff0a,
+              0 0 20px #00ff0a,
+              0 0 40px #00ff0a,
+              0 0 60px #00ff0a,
+              0 0 80px #00ff0a;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: 1s;
+  transform: scale(0);
+}
+span::after{
+  content: '';
+  position: absolute;width: 100%;height: 100%;top: 0;left: 0;
+  background: #00ff0a;
+  box-shadow: 0 0 10px #00ff0a,
+              0 0 20px #00ff0a,
+              0 0 40px #00ff0a,
+              0 0 60px #00ff0a,
+              0 0 80px #00ff0a,
+              0 0 100px #00ff0a;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: 1s;
+  transform: scale(0);
+}
+
+@keyframes dot{
+  0%{
+    transform: scale(0);
+  }
+  50%{
+    transform: scale(0.3);
+  }
+  100%{
+    transform: scale(0);
+  }
+}
+.anim::before{
+  animation: 1s linear;
+}
+
+.s1 span:nth-child(10)::before{
+  animation-name: dot;
+  animation-delay: 2s;
+}
+.s2 span:nth-child(10)::before{
+  animation-name: dot;
+  animation-delay: 2.2s;
+}
+.s3 span:nth-child(10)::before{
+  animation-name: dot;
+  animation-delay: 2.4s;
+}
+.s4 span:nth-child(10)::before{
+  animation-name: dot;
+  animation-delay: 2.6s;
+}
+.s5 span:nth-child(10)::before{
+  animation-name: dot;
+  animation-delay: 2.8s;
+}
+.s6 span:nth-child(10)::before{
+  animation-name: dot;
+  animation-delay: 3s;
+}
+.s7 span:nth-child(10)::before{
+  animation-name: dot;
+  animation-delay: 3.2s;
+}
+.s8 span:nth-child(10)::before{
+  animation-name: dot;
+  animation-delay: 3.4s;
+}
+
+  /* Сердце */
+  @keyframes heart{
+    0%{
+      transform: scale(0);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+.s9 span:nth-child(10)::before{
+  animation-name: heart;
+  animation-delay: 3.6s;
+  animation-fill-mode: forwards;
+}
+.s8 span:nth-child(9)::before{
+  animation-name: heart;
+  animation-delay: 3.8s;
+  animation-fill-mode: forwards;
+}
+.s8 span:nth-child(11)::before{
+  animation-name: heart;
+  animation-delay: 3.8s;
+  animation-fill-mode: forwards;
+}
+.s7 span:nth-child(8)::before{
+  animation-name: heart;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+.s7 span:nth-child(12)::before{
+  animation-name: heart;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+.s7 span:nth-child(7)::before{
+  animation-name: heart;
+  animation-delay: 4.2s;
+  animation-fill-mode: forwards;
+}
+.s7 span:nth-child(13)::before{
+  animation-name: heart;
+  animation-delay: 4.2s;
+  animation-fill-mode: forwards;
+}
+.s7 span:nth-child(6)::before{
+  animation-name: heart;
+  animation-delay: 4.4s;
+  animation-fill-mode: forwards;
+}
+.s7 span:nth-child(14)::before{
+  animation-name: heart;
+  animation-delay: 4.4s;
+  animation-fill-mode: forwards;
+}
+.s8 span:nth-child(5)::before{
+  animation-name: heart;
+  animation-delay: 4.6s;
+  animation-fill-mode: forwards;
+}
+.s8 span:nth-child(15)::before{
+  animation-name: heart;
+  animation-delay: 4.6s;
+  animation-fill-mode: forwards;
+}
+.s9 span:nth-child(4)::before{
+  animation-name: heart;
+  animation-delay: 4.8s;
+  animation-fill-mode: forwards;
+}
+.s9 span:nth-child(16)::before{
+  animation-name: heart;
+  animation-delay: 4.8s;
+  animation-fill-mode: forwards;
+}
+.s10 span:nth-child(4)::before{
+  animation-name: heart;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+.s10 span:nth-child(16)::before{
+  animation-name: heart;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+.s11 span:nth-child(4)::before{
+  animation-name: heart;
+  animation-delay: 5.2s;
+  animation-fill-mode: forwards;
+}
+.s11 span:nth-child(16)::before{
+  animation-name: heart;
+  animation-delay: 5.2s;
+  animation-fill-mode: forwards;
+}
+.s12 span:nth-child(5)::before{
+  animation-name: heart;
+  animation-delay: 5.4s;
+  animation-fill-mode: forwards;
+}
+.s12 span:nth-child(15)::before{
+  animation-name: heart;
+  animation-delay: 5.4s;
+  animation-fill-mode: forwards;
+}
+.s13 span:nth-child(6)::before{
+  animation-name: heart;
+  animation-delay: 5.6s;
+  animation-fill-mode: forwards;
+}
+.s13 span:nth-child(14)::before{
+  animation-name: heart;
+  animation-delay: 5.6s;
+  animation-fill-mode: forwards;
+}
+.s14 span:nth-child(7)::before{
+  animation-name: heart;
+  animation-delay: 5.8s;
+  animation-fill-mode: forwards;
+}
+.s14 span:nth-child(13)::before{
+  animation-name: heart;
+  animation-delay: 5.8s;
+  animation-fill-mode: forwards;
+}
+.s15 span:nth-child(8)::before{
+  animation-name: heart;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+.s15 span:nth-child(12)::before{
+  animation-name: heart;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+.s16 span:nth-child(9)::before{
+  animation-name: heart;
+  animation-delay: 6.2s;
+  animation-fill-mode: forwards;
+}
+.s16 span:nth-child(11)::before{
+  animation-name: heart;
+  animation-delay: 6.2s;
+  animation-fill-mode: forwards;
+}
+.s17 span:nth-child(10)::before{
+  animation-name: heart;
+  animation-delay: 6.4s;
+  animation-fill-mode: forwards;
+}
+/* ============================================*/
+
+.long::before{
+  animation: 3.3s linear;
+  animation-fill-mode: forwards;
+}
+@keyframes long{
+  0%{
+    transform: scale(1);
+  }
+  95%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(0);
+  }
+}
+.on::before{
+  animation: 0s linear;
+  animation-fill-mode: forwards;
+}
+@keyframes on{
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.off::before{
+  animation: 0.5s linear;
+  animation-fill-mode: forwards;
+}
+@keyframes off{
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(0);
+  }
+}
+.double::before{
+  animation: 0.5s linear;
+  animation-fill-mode: forwards;
+}
+.double::after{
+  animation: 0s linear;
+  animation-fill-mode: forwards;
+}
+@keyframes double{
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(0);
+  }
+}
+.doubleoff::before{
+  animation: 0.5s linear;
+  animation-fill-mode: forwards;
+}
+.doubleoff::after{
+  animation: 0.5s linear;
+  animation-fill-mode: forwards;
+}
+@keyframes doubleoff{
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(0);
+  }
+}
+/* стр */
+.s1 span:nth-child(21)::before{
+  animation-name: doubleoff;
+  animation-delay: 7.4s;
+}
+.s1 span:nth-child(21)::after{
+  animation-name: off;
+  animation-delay: 10s;
+}
+.s2 span:nth-child(21)::before{
+  animation-name: long;
+  animation-delay: 7.4s;
+}
+
+.s1 span:nth-child(20)::before{
+  animation-name: doubleoff;
+  animation-delay: 7.6s;
+}
+.s1 span:nth-child(20)::after{
+  animation-name: off;
+  animation-delay: 10.2s;
+}
+.s2 span:nth-child(20)::before{
+  animation-name: doubleoff;
+  animation-delay: 7.6s;
+}
+.s2 span:nth-child(20)::after{
+  animation-name: off;
+  animation-delay: 10.2s;
+}
+.s3 span:nth-child(20)::before{
+  animation-name: long;
+  animation-delay: 7.6s;
+}
+.s3 span:nth-child(21)::before{
+  animation-name: doubleoff;
+  animation-delay: 7.6s;
+}
+.s3 span:nth-child(21)::after{
+  animation-name: off;
+  animation-delay: 10.2s;
+}
+
+.s2 span:nth-child(19)::before{
+  animation-name: doubleoff;
+  animation-delay: 7.8s;
+}
+.s2 span:nth-child(19)::after{
+  animation-name: off;
+  animation-delay: 10.4s;
+}
+.s3 span:nth-child(19)::before{
+  animation-name: doubleoff;
+  animation-delay: 7.8s;
+}
+.s3 span:nth-child(19)::after{
+  animation-name: off;
+  animation-delay: 10.4s;
+}
+.s4 span:nth-child(19)::before{
+  animation-name: on;
+  animation-delay: 7.8s;
+}
+.s4 span:nth-child(20)::before{
+  animation-name: doubleoff;
+  animation-delay: 7.8s;
+}
+.s4 span:nth-child(20)::after{
+  animation-name: off;
+  animation-delay: 10.4s;
+}
+.s4 span:nth-child(21)::before{
+  animation-name: doubleoff;
+  animation-delay: 7.8s;
+}
+.s4 span:nth-child(21)::after{
+  animation-name: off;
+  animation-delay: 10.4s;
+}
+
+.s3 span:nth-child(18)::before{
+  animation-name: double;
+  animation-delay: 8s;
+}
+.s3 span:nth-child(18)::after{
+  animation-name: on;
+  animation-delay: 10.6s;
+}
+.s4 span:nth-child(18)::before{
+  animation-name: double;
+  animation-delay: 8s;
+}
+.s4 span:nth-child(18)::after{
+  animation-name: on;
+  animation-delay: 10.6s;
+}
+.s5 span:nth-child(18)::before{
+  animation-name: on;
+  animation-delay: 8s;
+}
+.s5 span:nth-child(19)::before{
+  animation-name: double;
+  animation-delay: 8s;
+}
+.s5 span:nth-child(19)::after{
+  animation-name: on;
+  animation-delay: 10.6s;
+}
+.s5 span:nth-child(20)::before{
+  animation-name: double;
+  animation-delay: 8s;
+}
+.s5 span:nth-child(20)::after{
+  animation-name: on;
+  animation-delay: 10.6s;
+}
+
+.s4 span:nth-child(17)::before{
+  animation-name: double;
+  animation-delay: 8.2s;
+}
+.s4 span:nth-child(17)::after{
+  animation-name: on;
+  animation-delay: 10.8s;
+}
+.s5 span:nth-child(17)::before{
+  animation-name: double;
+  animation-delay: 8.2s;
+}
+.s5 span:nth-child(17)::after{
+  animation-name: on;
+  animation-delay: 10.8s;
+}
+.s6 span:nth-child(17)::before{
+  animation-name: on;
+  animation-delay: 8.2s;
+}
+.s6 span:nth-child(18)::before{
+  animation-name: double;
+  animation-delay: 8.2s;
+}
+.s6 span:nth-child(18)::after{
+  animation-name: on;
+  animation-delay: 10.8s;
+}
+.s6 span:nth-child(19)::before{
+  animation-name: double;
+  animation-delay: 8.2s;
+}
+.s6 span:nth-child(19)::after{
+  animation-name: on;
+  animation-delay: 10.8s;
+}
+
+.s5 span:nth-child(16)::before{
+  animation-name: double;
+  animation-delay: 8.4s;
+}
+.s5 span:nth-child(16)::after{
+  animation-name: on;
+  animation-delay: 11s;
+}
+.s6 span:nth-child(16)::before{
+  animation-name: double;
+  animation-delay: 8.4s;
+}
+.s6 span:nth-child(16)::after{
+  animation-name: on;
+  animation-delay: 11s;
+}
+.s7 span:nth-child(16)::before{
+  animation-name: on;
+  animation-delay: 8.4s;
+}
+.s7 span:nth-child(17)::before{
+  animation-name: double;
+  animation-delay: 8.4s;
+}
+.s7 span:nth-child(17)::after{
+  animation-name: on;
+  animation-delay: 11s;
+}
+.s7 span:nth-child(18)::before{
+  animation-name: double;
+  animation-delay: 8.4s;
+}
+.s7 span:nth-child(18)::after{
+  animation-name: on;
+  animation-delay: 11s;
+}
+
+.s6 span:nth-child(15)::before{
+  animation-name: off;
+  animation-delay: 8.6s;
+}
+.s7 span:nth-child(15)::before{
+  animation-name: off;
+  animation-delay: 8.6s;
+}
+.s8 span:nth-child(16)::before{
+  animation-name: off;
+  animation-delay: 8.6s;
+}
+.s8 span:nth-child(17)::before{
+  animation-name: off;
+  animation-delay: 8.6s;
+}
+
+.s8 span:nth-child(14)::before{
+  animation-name: off;
+  animation-delay: 8.8s;
+}
+.s9 span:nth-child(14)::before{
+  animation-name: on;
+  animation-delay: 8.8s;
+}
+.s9 span:nth-child(15)::before{
+  animation-name: off;
+  animation-delay: 8.8s;
+}
+
+.s8 span:nth-child(13)::before{
+  animation-name: off;
+  animation-delay: 9s;
+}
+.s9 span:nth-child(13)::before{
+  animation-name: off;
+  animation-delay: 9s;
+}
+.s10 span:nth-child(13)::before{
+  animation-name: on;
+  animation-delay: 9s;
+}
+.s10 span:nth-child(14)::before{
+  animation-name: off;
+  animation-delay: 9s;
+}
+.s10 span:nth-child(15)::before{
+  animation-name: off;
+  animation-delay: 9s;
+}
+
+.s9 span:nth-child(12)::before{
+  animation-name: off;
+  animation-delay: 9.2s;
+}
+.s10 span:nth-child(12)::before{
+  animation-name: off;
+  animation-delay: 9.2s;
+}
+.s11 span:nth-child(12)::before{
+  animation-name: on;
+  animation-delay: 9.2s;
+}
+.s11 span:nth-child(13)::before{
+  animation-name: off;
+  animation-delay: 9.2s;
+}
+.s11 span:nth-child(14)::before{
+  animation-name: off;
+  animation-delay: 9.2s;
+}
+
+.s15 span:nth-child(7)::before{
+  animation-name: off;
+  animation-delay: 10.2s;
+}
+.s16 span:nth-child(7)::before{
+  animation-name: on;
+  animation-delay: 10.2s;
+}
+.s16 span:nth-child(8)::before{
+  animation-name: off;
+  animation-delay: 10.2s;
+}
+
+.s15 span:nth-child(6)::before{
+  animation-name: off;
+  animation-delay: 10.4s;
+}
+.s16 span:nth-child(6)::before{
+  animation-name: off;
+  animation-delay: 10.4s;
+}
+.s17 span:nth-child(6)::before{
+  animation-name: on;
+  animation-delay: 10.4s;
+}
+.s17 span:nth-child(7)::before{
+  animation-name: off;
+  animation-delay: 10.4s;
+}
+.s17 span:nth-child(8)::before{
+  animation-name: off;
+  animation-delay: 10.4s;
+}
+
+.s16 span:nth-child(5)::before{
+  animation-name: off;
+  animation-delay: 10.6s;
+}
+.s17 span:nth-child(5)::before{
+  animation-name: off;
+  animation-delay: 10.6s;
+}
+.s18 span:nth-child(5)::before{
+  animation-name: on;
+  animation-delay: 10.6s;
+}
+.s18 span:nth-child(6)::before{
+  animation-name: off;
+  animation-delay: 10.6s;
+}
+.s18 span:nth-child(7)::before{
+  animation-name: off;
+  animation-delay: 10.6s;
+}
+
+.s17 span:nth-child(4)::before{
+  animation-name: off;
+  animation-delay: 10.8s;
+}
+.s18 span:nth-child(4)::before{
+  animation-name: off;
+  animation-delay: 10.8s;
+}
+.s19 span:nth-child(4)::before{
+  animation-name: on;
+  animation-delay: 10.8s;
+}
+.s19 span:nth-child(5)::before{
+  animation-name: off;
+  animation-delay: 10.8s;
+}
+.s19 span:nth-child(6)::before{
+  animation-name: off;
+  animation-delay: 10.8s;
+}
+
+.s18 span:nth-child(3)::before{
+  animation-name: on;
+  animation-delay: 11s;
+}
+.s19 span:nth-child(3)::before{
+  animation-name: on;
+  animation-delay: 11s;
+}
+.s20 span:nth-child(3)::before{
+  animation-name: on;
+  animation-delay: 11s;
+}
+.s20 span:nth-child(4)::before{
+  animation-name: on;
+  animation-delay: 11s;
+}
+.s20 span:nth-child(5)::before{
+  animation-name: on;
+  animation-delay: 11s;
+}
+
+
+
+/* Ю */
+.s25 span:nth-child(2)::before{
+  animation-name: heart;
+  animation-delay: 11.7s;
+  animation-fill-mode: forwards;
+}
+.s26 span:nth-child(2)::before{
+  animation-name: heart;
+  animation-delay: 11.9s;
+  animation-fill-mode: forwards;
+}
+.s27 span:nth-child(2)::before{
+  animation-name: heart;
+  animation-delay: 12.1s;
+  animation-fill-mode: forwards;
+}
+.s28 span:nth-child(2)::before{
+  animation-name: heart;
+  animation-delay: 12.3s;
+  animation-fill-mode: forwards;
+}
+
+.s28 span:nth-child(3)::before{
+  animation-name: heart;
+  animation-delay: 12.5s;
+  animation-fill-mode: forwards;
+}
+.s29 span:nth-child(2)::before{
+  animation-name: heart;
+  animation-delay: 12.5s;
+  animation-fill-mode: forwards;
+}
+
+.s28 span:nth-child(4)::before{
+  animation-name: heart;
+  animation-delay: 12.7s;
+  animation-fill-mode: forwards;
+}
+.s30 span:nth-child(2)::before{
+  animation-name: heart;
+  animation-delay: 12.7s;
+  animation-fill-mode: forwards;
+}
+
+.s27 span:nth-child(4)::before{
+  animation-name: heart;
+  animation-delay: 12.9s;
+  animation-fill-mode: forwards;
+}
+.s29 span:nth-child(4)::before{
+  animation-name: heart;
+  animation-delay: 12.9s;
+  animation-fill-mode: forwards;
+}
+.s31 span:nth-child(2)::before{
+  animation-name: heart;
+  animation-delay: 12.9s;
+  animation-fill-mode: forwards;
+}
+
+.s26 span:nth-child(4)::before{
+  animation-name: heart;
+  animation-delay: 13.1s;
+  animation-fill-mode: forwards;
+}
+.s30 span:nth-child(4)::before{
+  animation-name: heart;
+  animation-delay: 13.1s;
+  animation-fill-mode: forwards;
+}
+
+.s25 span:nth-child(5)::before{
+  animation-name: heart;
+  animation-delay: 13.3s;
+  animation-fill-mode: forwards;
+}
+.s31 span:nth-child(5)::before{
+  animation-name: heart;
+  animation-delay: 13.3s;
+  animation-fill-mode: forwards;
+}
+
+.s25 span:nth-child(6)::before{
+  animation-name: heart;
+  animation-delay: 13.5s;
+  animation-fill-mode: forwards;
+}
+.s31 span:nth-child(6)::before{
+  animation-name: heart;
+  animation-delay: 13.5s;
+  animation-fill-mode: forwards;
+}
+
+.s26 span:nth-child(7)::before{
+  animation-name: heart;
+  animation-delay: 13.7s;
+  animation-fill-mode: forwards;
+}
+.s30 span:nth-child(7)::before{
+  animation-name: heart;
+  animation-delay: 13.7s;
+  animation-fill-mode: forwards;
+}
+
+.s27 span:nth-child(7)::before{
+  animation-name: heart;
+  animation-delay: 13.9s;
+  animation-fill-mode: forwards;
+}
+.s29 span:nth-child(7)::before{
+  animation-name: heart;
+  animation-delay: 13.9s;
+  animation-fill-mode: forwards;
+}
+
+.s28 span:nth-child(7)::before{
+  animation-name: heart;
+  animation-delay: 14.1s;
+  animation-fill-mode: forwards;
+}
+
+/* Л */
+.s31 span:nth-child(9)::before{
+  animation-name: heart;
+  animation-delay: 14.3s;
+  animation-fill-mode: forwards;
+}
+.s30 span:nth-child(10)::before{
+  animation-name: heart;
+  animation-delay: 14.5s;
+  animation-fill-mode: forwards;
+}
+.s29 span:nth-child(10)::before{
+  animation-name: heart;
+  animation-delay: 14.7s;
+  animation-fill-mode: forwards;
+}
+.s28 span:nth-child(10)::before{
+  animation-name: heart;
+  animation-delay: 14.9s;
+  animation-fill-mode: forwards;
+}
+.s27 span:nth-child(10)::before{
+  animation-name: heart;
+  animation-delay: 15.1s;
+  animation-fill-mode: forwards;
+}
+.s26 span:nth-child(10)::before{
+  animation-name: heart;
+  animation-delay: 15.3s;
+  animation-fill-mode: forwards;
+}
+.s25 span:nth-child(11)::before{
+  animation-name: heart;
+  animation-delay: 15.5s;
+  animation-fill-mode: forwards;
+}
+.s25 span:nth-child(12)::before{
+  animation-name: heart;
+  animation-delay: 15.7s;
+  animation-fill-mode: forwards;
+}
+.s25 span:nth-child(13)::before{
+  animation-name: heart;
+  animation-delay: 15.9s;
+  animation-fill-mode: forwards;
+}
+.s26 span:nth-child(13)::before{
+  animation-name: heart;
+  animation-delay: 16.1s;
+  animation-fill-mode: forwards;
+}
+.s27 span:nth-child(13)::before{
+  animation-name: heart;
+  animation-delay: 16.3s;
+  animation-fill-mode: forwards;
+}
+.s28 span:nth-child(13)::before{
+  animation-name: heart;
+  animation-delay: 16.5s;
+  animation-fill-mode: forwards;
+}
+.s29 span:nth-child(13)::before{
+  animation-name: heart;
+  animation-delay: 16.7s;
+  animation-fill-mode: forwards;
+}
+.s30 span:nth-child(13)::before{
+  animation-name: heart;
+  animation-delay: 16.9s;
+  animation-fill-mode: forwards;
+}
+.s31 span:nth-child(13)::before{
+  animation-name: heart;
+  animation-delay: 17.1s;
+  animation-fill-mode: forwards;
+}
+
+/* І */
+.s25 span:nth-child(15)::before{
+  animation-name: heart;
+  animation-delay: 18.3s;
+  animation-fill-mode: forwards;
+}
+.s27 span:nth-child(15)::before{
+  animation-name: heart;
+  animation-delay: 18.1s;
+  animation-fill-mode: forwards;
+}
+.s28 span:nth-child(15)::before{
+  animation-name: heart;
+  animation-delay: 17.9s;
+  animation-fill-mode: forwards;
+}
+.s29 span:nth-child(15)::before{
+  animation-name: heart;
+  animation-delay: 17.7s;
+  animation-fill-mode: forwards;
+}
+.s30 span:nth-child(15)::before{
+  animation-name: heart;
+  animation-delay: 17.5s;
+  animation-fill-mode: forwards;
+}
+.s31 span:nth-child(15)::before{
+  animation-name: heart;
+  animation-delay: 17.3s;
+  animation-fill-mode: forwards;
+}
+
+/* Я */
+.s31 span:nth-child(17)::before{
+  animation-name: heart;
+  animation-delay: 18.5s;
+  animation-fill-mode: forwards;
+}
+.s30 span:nth-child(18)::before{
+  animation-name: heart;
+  animation-delay: 18.7s;
+  animation-fill-mode: forwards;
+}
+.s29 span:nth-child(19)::before{
+  animation-name: heart;
+  animation-delay: 18.9s;
+  animation-fill-mode: forwards;
+}
+.s28 span:nth-child(20)::before{
+  animation-name: heart;
+  animation-delay: 19.1s;
+  animation-fill-mode: forwards;
+}
+
+.s27 span:nth-child(20)::before{
+  animation-name: heart;
+  animation-delay: 19.3s;
+  animation-fill-mode: forwards;
+}
+.s28 span:nth-child(19)::before{
+  animation-name: heart;
+  animation-delay: 19.3s;
+  animation-fill-mode: forwards;
+}
+.s29 span:nth-child(20)::before{
+  animation-name: heart;
+  animation-delay: 19.3s;
+  animation-fill-mode: forwards;
+}
+
+.s26 span:nth-child(20)::before{
+  animation-name: heart;
+  animation-delay: 19.5s;
+  animation-fill-mode: forwards;
+}
+.s28 span:nth-child(18)::before{
+  animation-name: heart;
+  animation-delay: 19.5s;
+  animation-fill-mode: forwards;
+}
+.s30 span:nth-child(20)::before{
+  animation-name: heart;
+  animation-delay: 19.5s;
+  animation-fill-mode: forwards;
+}
+
+.s25 span:nth-child(20)::before{
+  animation-name: heart;
+  animation-delay: 19.7s;
+  animation-fill-mode: forwards;
+}
+.s27 span:nth-child(17)::before{
+  animation-name: heart;
+  animation-delay: 19.7s;
+  animation-fill-mode: forwards;
+}
+.s31 span:nth-child(20)::before{
+  animation-name: heart;
+  animation-delay: 19.7s;
+  animation-fill-mode: forwards;
+}
+
+.s26 span:nth-child(17)::before{
+  animation-name: heart;
+  animation-delay: 19.9s;
+  animation-fill-mode: forwards;
+}
+.s25 span:nth-child(19)::before{
+  animation-name: heart;
+  animation-delay: 19.9s;
+  animation-fill-mode: forwards;
+}
+
+.s25 span:nth-child(18)::before{
+  animation-name: heart;
+  animation-delay: 20.1s;
+  animation-fill-mode: forwards;
+}
