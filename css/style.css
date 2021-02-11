@@ -48,6 +48,7 @@ span{
   display: block;
   width: 15px;
   height: 15px;
+  
   -webkit-text-fill-color:transparent;
 }
 span::before{
@@ -65,6 +66,16 @@ span::before{
               0 0 60px #00ff0a,
               0 0 80px #00ff0a;
   -moz-box-shadow: 0 0 10px #00ff0a,
+              0 0 20px #00ff0a,
+              0 0 40px #00ff0a,
+              0 0 60px #00ff0a,
+              0 0 80px #00ff0a;
+  -ms-box-shadow: 0 0 10px #00ff0a,
+              0 0 20px #00ff0a,
+              0 0 40px #00ff0a,
+              0 0 60px #00ff0a,
+              0 0 80px #00ff0a;
+  -o-box-shadow: 0 0 10px #00ff0a,
               0 0 20px #00ff0a,
               0 0 40px #00ff0a,
               0 0 60px #00ff0a,
@@ -90,6 +101,16 @@ span::after{
               0 0 60px #00ff0a,
               0 0 80px #00ff0a;
   -moz-box-shadow: 0 0 10px #00ff0a,
+              0 0 20px #00ff0a,
+              0 0 40px #00ff0a,
+              0 0 60px #00ff0a,
+              0 0 80px #00ff0a;
+  -ms-box-shadow: 0 0 10px #00ff0a,
+              0 0 20px #00ff0a,
+              0 0 40px #00ff0a,
+              0 0 60px #00ff0a,
+              0 0 80px #00ff0a;
+  -o-box-shadow: 0 0 10px #00ff0a,
               0 0 20px #00ff0a,
               0 0 40px #00ff0a,
               0 0 60px #00ff0a,
